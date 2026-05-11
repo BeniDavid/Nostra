@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Nostra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand">Nostra</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html" class="active">Collections</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-collections">
+        <div class="container hero-collections-inner">
+            <div>
+                <span class="eyebrow">Collections</span>
+                <h1>Find your perfect look.</h1>
+                <p>Search, filter, and browse the latest fashion collections with ease.</p>
+            </div>
+            <div class="search-top">
+                <input type="text" id="searchInput" placeholder="Search products..." aria-label="Search products">
+                <button id="searchButton" class="btn btn-secondary">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container collections-layout">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Occasion</h2>
+                <label><input type="checkbox" class="filter-occasion" value="Summer Party"> Summer Party</label>
+                <label><input type="checkbox" class="filter-occasion" value="Beach"> Beach</label>
+                <label><input type="checkbox" class="filter-occasion" value="Party"> Party</label>
+                <label><input type="checkbox" class="filter-occasion" value="Casual"> Casual</label>
+                <label><input type="checkbox" class="filter-occasion" value="Evening"> Evening</label>
+            </div>
+            <div class="sidebar-section">
+                <h2>Colors</h2>
+                <label><input type="checkbox" class="filter-color" value="Red"> Red</label>
+                <label><input type="checkbox" class="filter-color" value="Blue"> Blue</label>
+                <label><input type="checkbox" class="filter-color" value="White"> White</label>
+                <label><input type="checkbox" class="filter-color" value="Green"> Green</label>
+            </div>
+            <div class="sidebar-section">
+                <h2>Arrivals</h2>
+                <label><input type="checkbox" class="filter-arrival" value="New"> New</label>
+                <label><input type="checkbox" class="filter-arrival" value="Old"> Old</label>
+            </div>
+            <button id="resetFilters" class="btn btn-secondary sidebar-reset">Reset Filters</button>
+        </aside>
+
+        <section class="products-panel">
+            <div class="products-header">
+                <p id="resultCount">Showing all products</p>
+                <div class="sort-box">
+                    <label for="sortSelect">Sort by</label>
+                    <select id="sortSelect">
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price low to high</option>
+                        <option value="price-high">Price high to low</option>
+                        <option value="rating">Best rating</option>
+                    </select>
+                </div>
+            </div>
+            <div id="productsGrid" class="product-grid"></div>
+            <div id="noProducts" class="no-results">No products match your filters.</div>
+        </section>
+    </main>
+
+    <section class="newsletter-block compact">
+        <div class="container newsletter-grid">
+            <div>
+                <span class="eyebrow">Offers</span>
+                <h2>Get 20% off on your first order.</h2>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+                <button class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer footer-collections">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="brand footer-brand">Nostra</a>
+                <p>Fresh fashion and modern essentials designed for every style.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <p>support@nostra.com</p>
+                <p>+91 98765 43210</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

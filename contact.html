@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nostra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="brand">Nostra</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero hero-contact">
+        <div class="container hero-contact-inner">
+            <div>
+                <span class="eyebrow">Contact</span>
+                <h1>We are here to help.</h1>
+                <p>Have a question or need assistance? Send us a message and we will respond shortly.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container contact-page">
+        <div class="contact-grid">
+            <article class="info-card">
+                <h3>Address</h3>
+                <p>123 Fashion Avenue<br>Mumbai, India</p>
+            </article>
+            <article class="info-card">
+                <h3>Email</h3>
+                <p>hello@nostra.com</p>
+                <p>support@nostra.com</p>
+            </article>
+            <article class="info-card">
+                <h3>Phone</h3>
+                <p>+91 98765 43210</p>
+                <p>Mon - Fri: 9 AM - 6 PM</p>
+            </article>
+        </div>
+
+        <section class="contact-form-section">
+            <h2>Send a message</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <label>
+                        Name
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </label>
+                </div>
+                <label>
+                    Subject
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                    <span class="error-message" id="subjectError"></span>
+                </label>
+                <label>
+                    Message
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </label>
+                <button type="submit" class="btn btn-primary">Submit Message</button>
+                <div id="successMessage" class="success-message">Your message has been sent successfully.</div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer footer-contact">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="brand footer-brand">Nostra</a>
+                <p>Premium styles built for modern wardrobes.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <p>support@nostra.com</p>
+                <p>+91 98765 43210</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
